@@ -1,0 +1,59 @@
+.address {
+  background-color: #f4fbfe;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.address__address-info {
+  width: 900px;
+  color: #22ace3;
+  font-size: 19px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.3;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  margin: 20px auto;
+}
+
+.address__list {
+  display: flex;
+  margin-top: 50px;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.address__list__item:first-child {
+  margin-left: 70px;
+}
+.address__list__item:last-child {
+  margin-right: 70px;
+}
+
+.address__list__item img {
+  margin: 20px 70px;
+  justify-content: center;
+  text-align: center;
+}
+.address__list__img-title {
+  color: #22ace3;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "PFDinDisplayPro";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.address__list__img-text {
+  color: #666666;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: "PFDinDisplayPro";
+  text-align: center;
+}
+@media (max-width: 990px) {
+  .address__address-info {
+    width: 95%;
+  }
+}
