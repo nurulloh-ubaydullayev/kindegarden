@@ -9,10 +9,47 @@
   </head>
   <body>
     <!-- header -->
+    <img
+      src="./images/blue-hamburger.png"
+      alt="icon"
+      width="100"
+      height="100"
+      class="hamburger"
+      id="hamburger"
+    />
+
+    <div id="menu">
+      <ul class="menu_list">
+        <li class="menu_item closed">
+          <img
+            src="./images/x-mark.png"
+            width="100"
+            height="100"
+            alt="icon"
+            class="closed-icon"
+          />
+        </li>
+        <li class="menu_item"><a class="menu_link" href="#">Команда</a></li>
+        <li class="menu_item">
+          <a class="menu_link" href="#">Преимущества</a>
+        </li>
+        <li class="menu_item"><a class="menu_link" href="#">Модули</a></li>
+        <li class="menu_item">
+          <a class="menu_link" href="#">Подготовка к школе</a>
+        </li>
+        <li class="menu_item"><a class="menu_link" href="#">Отзывы</a></li>
+        <li class="menu_item"><a class="menu_link" href="#">Адреса</a></li>
+      </ul>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <img src="./images/header_logo.svg" alt="header logo" />
+          <img
+            class="header_logo"
+            src="./images/header_logo.svg"
+            alt="header logo"
+          />
           <p class="header__header-info">
             Билингвальные детские сады Центры раннего развития
           </p>
@@ -41,13 +78,18 @@
             </li>
           </ul>
 
-          <button class="send_application">Оставить заявку</button>
+          <!-- <a class="send_application-btn" href="https://www.google.com"
+          >Оставить заявку</a
+        > -->
+          <button class="send_application send_application-btn">
+            Оставить заявку
+          </button>
         </div>
       </div>
       <div class="header-bottom">
         <ul class="header-bottom__list">
           <li class="header-bottom__list__item">
-            <a href="#">Возрастные группы</a>
+            <a class="header__long-link" href="#">Возрастные группы</a>
           </li>
           <li class="header-bottom__list__item">
             <a href="#">Команда</a>
@@ -59,7 +101,7 @@
             <a href="#">Модули</a>
           </li>
           <li class="header-bottom__list__item">
-            <a href="#">Подготовка к школе</a>
+            <a class="header__long-link" href="#">Подготовка к школе</a>
           </li>
           <li class="header-bottom__list__item">
             <a href="#">Отзывы</a>
@@ -70,20 +112,58 @@
         </ul>
       </div>
     </header>
+
     <main>
       <!-- Intro -->
       <section class="intro">
         <div class="container">
           <div class="intro__info">
+            <div class="header-intro">
+              <img
+                class="intro_logo"
+                src="./images/header_logo.svg"
+                alt="header logo"
+              />
+
+              <div class="intro_top">
+                <a class="intro_top_tel" href="tel: +998999999999">
+                  <img src="./images/phone-icon.svg" alt="phone icon" />
+                  +998 99 999 99 99
+                </a>
+
+                <ul class="into-top__list">
+                  <li class="into-top__list__item">
+                    <a href="https://www.facebook.com">
+                      <img src="./images/facebook.svg" alt="facebook logo" />
+                    </a>
+                  </li>
+                  <li class="into-top__list__item">
+                    <a href="https://www.wk.com">
+                      <img src="./images/wk.svg" alt="facebook logo" />
+                    </a>
+                  </li>
+                  <li class="into-top__list__item">
+                    <a href="https://www.instagram.com">
+                      <img src="./images/insta.svg" alt="facebook logo" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <h1 class="intro__info__heading">
               Сеть билингвальных детских садов в Москве
             </h1>
-            <p class="intro__info__parapraph">
+            <p class="intro__info__paragraph">
               с современной программой развития на базе международных стандартов
               образования
             </p>
 
             <a class="intro__info__link" href="#">Подробнее</a>
+            <a class="intro_bottom_tel" href="tel: +998999999999">
+              <img src="./images/phone-icon.svg" alt="phone icon" />
+              +998 99 999 99 99
+            </a>
           </div>
         </div>
       </section>
@@ -91,27 +171,54 @@
       <!-- address -->
       <section class="address">
         <div class="container">
-          <h5>
-            Постоянное всестороннее развитие и комплексное воспитание вашего ребенка по
-            индивидуальной траектории с учётом интеллектуальных способностей и когнитивных
-            процессов для гармоничного физического, творческого и эстетического развития
-            на фоне выявления личных способностей.
+          <h5 class="address__address-info">
+            Постоянное всестороннее развитие и комплексное воспитание вашего
+            ребенка по индивидуальной траектории с учётом интеллектуальных
+            способностей и когнитивных процессов для гармоничного физического,
+            творческого и эстетического развития на фоне выявления личных
+            способностей.
           </h5>
 
           <ul class="address__list">
             <li class="address__list__item">
-              <img src="./images/address-img1.webp" width="202" height="140" />
-              <h6 class="address__list__img-title">ЗАО МЕТРО РАМЕНКИ</h6>
+              <img
+                class="address__item__img"
+                src="./images/address-img1.webp"
+                width="202"
+                height="140"
+              />
+              <h6 class="address__list__img-title">
+                ЗАО <br />
+                МЕТРО РАМЕНКИ
+              </h6>
               <p class="address__list__img-text">ул. Столетова, д. 19</p>
             </li>
             <li class="address__list__item">
-              <img src="./images/address-img1.webp" width="202" height="140" />
-              <h6 class="address__list__img-title">СЗАО МЕТРО ОКТЯБРЬСКОЕ ПОЛЕ</h6>
-              <p class="address__list__img-text">ул. Карамышевская наб., д. 48, к.1</p>
+              <img
+                class="address__item__img"
+                src="./images/address-img1.webp"
+                width="202"
+                height="140"
+              />
+              <h6 class="address__list__img-title">
+                СЗАО <br />
+                МЕТРО ОКТЯБРЬСКОЕ ПОЛЕ
+              </h6>
+              <p class="address__list__img-text">
+                ул. Карамышевская наб., д. 48, к.1
+              </p>
             </li>
             <li class="address__list__item">
-              <img src="./images/address-img1.webp" width="202" height="140" />
-              <h6 class="address__list__img-title">ЗАО МЕТРО ФИЛИ</h6>
+              <img
+                class="address__item__img"
+                src="./images/address-img1.webp"
+                width="202"
+                height="140"
+              />
+              <h6 class="address__list__img-title">
+                ЗАО <br />
+                МЕТРО ФИЛИ
+              </h6>
               <p class="address__list__img-text">ул. Новозаводская, д. 8</p>
             </li>
           </ul>
@@ -123,47 +230,68 @@
         <h2 class="AgeGroups__heading">Возрастные группы</h2>
         <ul class="AgeGroups__list">
           <li class="AgeGroups__list-item">
-            <img src="./images/Frame_1.webp" alt="ss" width="260" height="260" />
+            <img
+              src="./images/Frame_1.webp"
+              alt="ss"
+              width="260"
+              height="260"
+            />
             <h3 class="AgeGroups__list-item__heading">Baby Fun</h3>
             <p class="AgeGroups__list-item__order">1,5 - 3 года</p>
             <p class="AgeGroups__list-item__info">
-              Грамотная, четко продуманная структура занятия структура образовательной
-              деятельности, с чередованием различных видов деятельности
+              Грамотная, четко продуманная структура занятия структура
+              образовательной деятельности, с чередованием различных видов
+              деятельности
             </p>
             <button class="AgeGroups__list-item__btn">Подробнее</button>
           </li>
           <li class="AgeGroups__list-item">
-            <img src="./images/Frame_2.webp" alt="ss" width="260" height="260" />
+            <img
+              src="./images/Frame_2.webp"
+              alt="ss"
+              width="260"
+              height="260"
+            />
             <h3 class="AgeGroups__list-item__heading">Energy Fun</h3>
             <p class="AgeGroups__list-item__order">3 - 4 года</p>
             <p class="AgeGroups__list-item__info">
-              Большое внимание на английских занятиях уделяется сенсорному развитию
-              малышей. Мы даем детям возможность пробовать все на ощупь, используем
-              пальчиковые краски и пр.
+              Большое внимание на английских занятиях уделяется сенсорному
+              развитию малышей. Мы даем детям возможность пробовать все на
+              ощупь, используем пальчиковые краски и пр.
             </p>
             <button class="AgeGroups__list-item__btn">Подробнее</button>
           </li>
 
           <li class="AgeGroups__list-item">
-            <img src="./images/Frame_3.webp" alt="ss" width="260" height="260" />
+            <img
+              src="./images/Frame_3.webp"
+              alt="ss"
+              width="260"
+              height="260"
+            />
             <h3 class="AgeGroups__list-item__heading">Discovery Fun</h3>
             <p class="AgeGroups__list-item__order">4 - 5 лет</p>
             <p class="AgeGroups__list-item__info">
-              Дети познают мир только через собственный опыт, им малодоступны абстрактные
-              понятия. При подаче нового лексического материала важно делать это образно и
-              увлекательно.
+              Дети познают мир только через собственный опыт, им малодоступны
+              абстрактные понятия. При подаче нового лексического материала
+              важно делать это образно и увлекательно.
             </p>
             <button class="AgeGroups__list-item__btn">Подробнее</button>
           </li>
 
           <li class="AgeGroups__list-item">
-            <img src="./images/Frame_4.webp" alt="ss" width="260" height="260" />
+            <img
+              src="./images/Frame_4.webp"
+              alt="ss"
+              width="260"
+              height="260"
+            />
             <h3 class="AgeGroups__list-item__heading">PreSchool</h3>
             <p class="AgeGroups__list-item__order">5 - 7 лет</p>
             <p class="AgeGroups__list-item__info">
-              Дети старшей группы получают много заданий на развитие памяти, внимания,
-              логики, повторение новой лексики. Мы не ставим своей задачей научить детей
-              читать и писать на английском языке.
+              Дети старшей группы получают много заданий на развитие памяти,
+              внимания, логики, повторение новой лексики. Мы не ставим своей
+              задачей научить детей читать и писать на английском языке.
             </p>
             <button class="AgeGroups__list-item__btn">Подробнее</button>
           </li>
@@ -177,10 +305,17 @@
           <!-- 1 -->
           <li class="benefits__list-item">
             <div class="benefits__list-item-left">
-              <img src="images/1.webp" alt="benefits doc" width="560" height="330" />
+              <img
+                src="images/1.webp"
+                alt="benefits doc"
+                width="560"
+                height="330"
+              />
             </div>
             <div class="benefits__list-item-right">
-              <h3 class="benefits__list-item-right-heading">Безопасная среда</h3>
+              <h3 class="benefits__list-item-right-heading">
+                Безопасная среда
+              </h3>
               <ul class="benefits__list-item__infos">
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
@@ -191,13 +326,15 @@
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Безопасная мебель и позитивное цветовое оформление центра.</span
+                    >Безопасная мебель и позитивное цветовое оформление
+                    центра.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Кварцевание и уборка помещений со специальными средствами.</span
+                    >Кварцевание и уборка помещений со специальными
+                    средствами.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
@@ -212,7 +349,9 @@
           <!-- 2 -->
           <li class="benefits__list-item">
             <div class="benefits__list-item-right">
-              <h3 class="benefits__list-item-right-heading">Мягкая адаптация</h3>
+              <h3 class="benefits__list-item-right-heading">
+                Мягкая адаптация
+              </h3>
               <ul class="benefits__list-item__infos">
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
@@ -223,13 +362,15 @@
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Безопасная мебель и позитивное цветовое оформление центра.</span
+                    >Безопасная мебель и позитивное цветовое оформление
+                    центра.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Кварцевание и уборка помещений со специальными средствами.</span
+                    >Кварцевание и уборка помещений со специальными
+                    средствами.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
@@ -241,17 +382,29 @@
               </ul>
             </div>
             <div class="benefits__list-item-left">
-              <img src="images/2.webp" alt="benefits doc" width="560" height="330" />
+              <img
+                src="images/2.webp"
+                alt="benefits doc"
+                width="560"
+                height="330"
+              />
             </div>
           </li>
 
           <!-- 3 -->
           <li class="benefits__list-item">
             <div class="benefits__list-item-left">
-              <img src="images/3.webp" alt="benefits doc" width="560" height="330" />
+              <img
+                src="images/3.webp"
+                alt="benefits doc"
+                width="560"
+                height="330"
+              />
             </div>
             <div class="benefits__list-item-right">
-              <h3 class="benefits__list-item-right-heading">Билингвальная программа</h3>
+              <h3 class="benefits__list-item-right-heading">
+                Билингвальная программа
+              </h3>
               <ul class="benefits__list-item__infos">
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
@@ -262,13 +415,15 @@
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Безопасная мебель и позитивное цветовое оформление центра.</span
+                    >Безопасная мебель и позитивное цветовое оформление
+                    центра.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Кварцевание и уборка помещений со специальными средствами.</span
+                    >Кварцевание и уборка помещений со специальными
+                    средствами.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
@@ -297,13 +452,15 @@
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Безопасная мебель и позитивное цветовое оформление центра.</span
+                    >Безопасная мебель и позитивное цветовое оформление
+                    центра.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
                   <span class="yellow-cicrle"></span>
                   <span class="benefits__list-item-infos-item"
-                    >Кварцевание и уборка помещений со специальными средствами.</span
+                    >Кварцевание и уборка помещений со специальными
+                    средствами.</span
                   >
                 </li>
                 <li class="benefits__list-item__infos">
@@ -315,7 +472,12 @@
               </ul>
             </div>
             <div class="benefits__list-item-left">
-              <img src="images/4.webp" alt="benefits doc" width="560" height="330" />
+              <img
+                src="images/4.webp"
+                alt="benefits doc"
+                width="560"
+                height="330"
+              />
             </div>
           </li>
         </ul>
@@ -332,9 +494,9 @@
           <div class="skills__top">
             <h2 class="skills__heading">Дополнительные занятия «Skills»</h2>
             <p class="skills__description">
-              Это 8 направлений для дополнительной деятельности в рамках эксклюзивной
-              последовательной программы FunsCool. Занятия проводятся на базе детских
-              садов.
+              Это 8 направлений для дополнительной деятельности в рамках
+              эксклюзивной последовательной программы FunsCool. Занятия
+              проводятся на базе детских садов.
             </p>
           </div>
 
@@ -598,16 +760,17 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <p>
-                  Садик в парке с фонтанами. Современное просторное помещение, технически
-                  оборудованное для занятий и интерактивов. Отдельные светлые группы с
-                  окнами на юг. Видеонаблюдение. Море современных игрушек. Маленькие
-                  группы по 10 человек. Утренний медицинский фильтр детей, свой врач.
-                  Собственное сбалансированное шестиразовое питание. Кружки с приходящими
-                  профессиональными педагогами. А главное - золотые воспитатели, которые
-                  любят детей и справятся даже с самой сложной ситуацией адаптации. Здесь
-                  будут просто любить вашего ребёнка. Будут внимательны к вашим
-                  пожеланиям, особенностям и просьбам. Здесь ребёнок будет учиться
-                  самостоятельности, но в атмосфере любви.
+                  Садик в парке с фонтанами. Современное просторное помещение,
+                  технически оборудованное для занятий и интерактивов. Отдельные
+                  светлые группы с окнами на юг. Видеонаблюдение. Море
+                  современных игрушек. Маленькие группы по 10 человек. Утренний
+                  медицинский фильтр детей, свой врач. Собственное
+                  сбалансированное шестиразовое питание. Кружки с приходящими
+                  профессиональными педагогами. А главное - золотые воспитатели,
+                  которые любят детей и справятся даже с самой сложной ситуацией
+                  адаптации. Здесь будут просто любить вашего ребёнка. Будут
+                  внимательны к вашим пожеланиям, особенностям и просьбам. Здесь
+                  ребёнок будет учиться самостоятельности, но в атмосфере любви.
                 </p>
                 <img
                   class="comments__user-img"
@@ -618,12 +781,13 @@
               </div>
               <div class="swiper-slide">
                 <p>
-                  Артур ходит в FunsCool с 3,5 лет. Для меня важно, чтобы ребёнок был
-                  занят познавательной деятельностью, чего не всегда удавалось дома с
-                  младшим. За год Артур научился читать, считать до 100, писать слова,
-                  цифры, в уме до 10, пополнил словарный запас. И самое главное Артур
-                  выходит из садика счастливый, долго прощаясь с друзьями, рассказывает о
-                  своих победах или неудачах, новых познаниях и с новыми вопросами о
+                  Артур ходит в FunsCool с 3,5 лет. Для меня важно, чтобы
+                  ребёнок был занят познавательной деятельностью, чего не всегда
+                  удавалось дома с младшим. За год Артур научился читать,
+                  считать до 100, писать слова, цифры, в уме до 10, пополнил
+                  словарный запас. И самое главное Артур выходит из садика
+                  счастливый, долго прощаясь с друзьями, рассказывает о своих
+                  победах или неудачах, новых познаниях и с новыми вопросами о
                   жизни.
                 </p>
                 <img
@@ -635,12 +799,13 @@
               </div>
               <div class="swiper-slide">
                 <p>
-                  Большое спасибо нашим любимым педагогам за доброту, любовь и внимание к
-                  детям. Спасибо за воспитание семейных ценностей, за прекрасную атмосферу
-                  беззаботного детства, в которой хочется остаться и самим родителям. Мы
-                  ходим в этот садик второй год, всё очень нравится, ребенок в восторге.
-                  Нашли новых друзей, очень любим учиться и вместо игрушек стали покупать
-                  больше книжек. =)))) Низкий вам поклон, всему педагогическому составу
+                  Большое спасибо нашим любимым педагогам за доброту, любовь и
+                  внимание к детям. Спасибо за воспитание семейных ценностей, за
+                  прекрасную атмосферу беззаботного детства, в которой хочется
+                  остаться и самим родителям. Мы ходим в этот садик второй год,
+                  всё очень нравится, ребенок в восторге. Нашли новых друзей,
+                  очень любим учиться и вместо игрушек стали покупать больше
+                  книжек. =)))) Низкий вам поклон, всему педагогическому составу
                   «FunsCool»!
                 </p>
                 <img
@@ -691,8 +856,8 @@
         <div class="header__form-wrapper">
           <h3 class="header__form-heading">Оставить заявку</h3>
           <p class="header__form-desc">
-            Оставьте ваши контактные данные, мы свяжемся с вами в течение дня и ответим на
-            все вопросы!
+            Оставьте ваши контактные данные, мы свяжемся с вами в течение дня и
+            ответим на все вопросы!
           </p>
           <form class="header__modal-form">
             <input
@@ -703,7 +868,9 @@
             />
 
             <select name="child_age" id="child_age">
-              <option value="null" selected disabled>Укажите возраст ребенка..</option>
+              <option value="null" selected disabled>
+                Укажите возраст ребенка..
+              </option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -713,14 +880,22 @@
             </select>
 
             <select name="branch" id="choose_branch">
-              <option value="null" selected disabled>Выберите удобный филиал..</option>
+              <option value="null" selected disabled>
+                Выберите удобный филиал..
+              </option>
               <option value="1">1-filial</option>
               <option value="2">2-filial</option>
             </select>
 
-            <input type="text" placeholder="+998 (99) 999 99 99" name="phone_number" />
+            <input
+              type="text"
+              placeholder="+998 (99) 999 99 99"
+              name="phone_number"
+            />
 
-            <button class="header__modal-submit" type="submit">Отправить</button>
+            <button class="header__modal-submit" type="submit">
+              Отправить
+            </button>
           </form>
 
           <p class="header__form-note">
@@ -754,5 +929,6 @@
     </script>
 
     <script src="./js/main.js"></script>
+    <script src="./js/mainMenu.js"></script>
   </body>
 </html>

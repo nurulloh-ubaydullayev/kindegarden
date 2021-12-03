@@ -18,16 +18,13 @@
 
 .address__list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   padding: 0;
   list-style-type: none;
-  justify-content: space-between;
-}
-.address__list__item:first-child {
-  margin-left: 70px;
-}
-.address__list__item:last-child {
-  margin-right: 70px;
+  justify-content: space-around;
+  text-align: center;
+  justify-content: center;
 }
 
 .address__list__item img {
@@ -39,9 +36,10 @@
   color: #22ace3;
   font-size: 14px;
   font-weight: 600;
-  font-family: "PFDinDisplayPro";
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
 .address__list__img-text {
@@ -49,11 +47,109 @@
   font-size: 20px;
   line-height: 1.4;
   font-weight: 400;
-  font-family: "PFDinDisplayPro";
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
   text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+@media (max-width: 1030px) {
+  .address__item__img {
+    width: 168px;
+    height: 116px;
+  }
 }
 @media (max-width: 990px) {
   .address__address-info {
     width: 95%;
+  }
+}
+@media (max-width: 978px) {
+  .address {
+    padding-bottom: 0;
+  }
+  .address__list__item {
+    margin-bottom: 80px;
+  }
+  .address__list {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 790px) {
+  .address__item__img {
+    width: 411px;
+    height: 290px;
+  }
+}
+@media (max-width: 575px) {
+  .address__item__img {
+    width: 370px;
+    height: 250px;
+  }
+}
+@media (max-width: 538px) {
+  .address__item__img {
+    width: 350px;
+    height: 230px;
+  }
+}
+@media (max-width: 515px) {
+  .address__item__img {
+    width: 320px;
+    height: 200px;
+  }
+}
+@media (max-width: 487px) {
+  .address__item__img {
+    width: 300px;
+    height: 180px;
+  }
+}
+@media (max-width: 467px) {
+  .address__item__img {
+    width: 280px;
+    height: 180px;
+  }
+}
+@media (max-width: 447px) {
+  .address__item__img {
+    width: 260px;
+    height: 180px;
+  }
+}
+@media (max-width: 447px) {
+  .address__item__img {
+    width: 260px;
+    height: 170px;
+  }
+}
+@media (max-width: 427px) {
+  .address__item__img {
+    width: 230px;
+    height: 160px;
+  }
+}
+@media (max-width: 397px) {
+  .address__item__img {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (max-width: 367px) {
+  .address__item__img {
+    width: 170px;
+    height: 135px;
+  }
+}
+@media (max-width: 337px) {
+  .address__item__img {
+    width: 150px;
+    height: 120px;
+  }
+}
+@media (max-width: 317px) {
+  .address__item__img {
+    width: 130px;
+    height: 110px;
   }
 }

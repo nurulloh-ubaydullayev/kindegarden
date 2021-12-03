@@ -82,3 +82,9 @@
     border-color 0.2s ease-in-out;
   margin-top: 30px;
 }
+@media (max-width: 470px) {
+  .AgeGroups__heading {
+    font-size: 42px;
+    text-align: center;
+  }
+}

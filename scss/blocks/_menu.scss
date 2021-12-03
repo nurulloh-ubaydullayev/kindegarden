@@ -2,9 +2,10 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
 }
 #menu {
   position: fixed;
@@ -15,7 +16,7 @@
   padding: 0px;
   width: 0px;
   height: 100vh;
-  z-index: 10;
+  z-index: 30;
 }
 
 .menu_item {
@@ -35,4 +36,14 @@
 }
 .closed {
   text-align: right;
+}
+
+@media (max-width: 990px) {
+  .hamburger {
+    display: inline-block;
+    z-index: 30;
+  }
+  .header-bottom {
+    display: none;
+  }
 }

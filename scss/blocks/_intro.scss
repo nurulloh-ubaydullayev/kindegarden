@@ -242,4 +242,16 @@
   .intro__info__heading {
     font-size: 40px;
   }
+  .intro_logo {
+    margin-right: -20px;
+  }
+  .into-top__list {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 335px) {
+  .intro__info__heading {
+    font-size: 38px;
+    width: 300px;
+  }
 }
