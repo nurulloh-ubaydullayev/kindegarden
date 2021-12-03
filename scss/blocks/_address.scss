@@ -141,3 +141,15 @@
     height: 135px;
   }
 }
+@media (max-width: 337px) {
+  .address__item__img {
+    width: 150px;
+    height: 120px;
+  }
+}
+@media (max-width: 317px) {
+  .address__item__img {
+    width: 130px;
+    height: 110px;
+  }
+}
