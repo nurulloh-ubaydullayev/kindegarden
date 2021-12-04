@@ -71,3 +71,49 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 950px) {
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+  }
+
+  .benefits__list-item:nth-child(2n) {
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .benefits__list-item-left img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .benefits__heading {
+    font-size: 30px;
+  }
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+
+  .benefits__list-item-left img {
+    width: 300px;
+  }
+}
