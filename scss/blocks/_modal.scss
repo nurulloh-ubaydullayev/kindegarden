@@ -1,0 +1,150 @@
+.more13-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 100;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+.more13--active {
+  display: flex;
+}
+
+// more34
+
+.more34-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 100;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+.more34--active {
+  display: flex;
+}
+
+// More45
+
+.more45-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 100;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+.more45--active {
+  display: flex;
+}
+
+// More57
+
+.more57-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 100;
+  cursor: pointer;
+  overflow-y: auto;
+}
+
+.more57--active {
+  display: flex;
+}
+
+.modal__container {
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 50px;
+  padding: 40px;
+  background-color: #fff;
+  cursor: auto;
+}
+
+.more-modal__heading {
+  color: #22ace3;
+  font-size: 32px;
+  line-height: 1.17;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+}
+
+.more-modal__p {
+  margin-bottom: 20px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.55;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.more-modal__register13,
+.more-modal__register34,
+.more-modal__register45,
+.more-modal__register57 {
+  padding: 15px 25px;
+  background-color: #ffd302;
+  border: none;
+  border-radius: 30px;
+  color: #666666;
+  font-size: 14px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .modal__container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal__container {
+    width: 90%;
+  }
+}

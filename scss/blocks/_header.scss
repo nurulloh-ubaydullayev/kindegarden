@@ -93,6 +93,7 @@
   bottom: 0;
   display: none;
   background-color: rgba(51, 51, 51, 0.555);
+  z-index: 100;
 }
 
 .modal--active .header__modal {
@@ -132,6 +133,7 @@
 }
 
 .header__form-wrapper {
+  position: relative;
   width: 400px;
   // max-width: 550px;
   padding: 40px;

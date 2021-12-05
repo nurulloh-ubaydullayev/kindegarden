@@ -79,6 +79,10 @@
     margin: 0 100px;
   }
 
+  .benefits__list-item-right {
+    order: 1;
+  }
+
   .benefits__list-item:nth-child(2n) {
     order: 2;
   }
